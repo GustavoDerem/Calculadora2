@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculo(){
+            resultado.value = parseInt(valor1.value) + parseInt(valor2.value)
+        }
+
+        function subtrair(){
+            resultado.value = parseInt(valor1.value) - parseInt(valor2.value)
+        }
+
+        function dividir(){
+            resultado.value = parseInt(valor1.value) / parseInt(valor2.value)
+        }
+
+        function multiplicar(){
+            resultado.value = parseInt(valor1.value) * parseInt(valor2.value)
+        }
+
+        valor1.value= 0;
+        valor1.value= 0;
+
+    </script>
+<div class="valores">
+    valor1: <input type="text" id="valor1" value="0"><br>
+    valor2: <input type="text" id="valor2" value="0"><br>
+</div>
+        <input type="button" value="somar" onclick="calculo()">
+        <input type="button" value="subtrair" onclick="subtrair()">
+        <input type="button" value="dividir" onclick="dividir()">
+        <input type="button" value="multiplicar" onclick="multiplicar()">
+
+        <div class="resultado">
+        resultado: <input type="text" id="resultado" value="0"  </div>
+       
+
+
+</body>
+</html>
